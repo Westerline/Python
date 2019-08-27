@@ -1,13 +1,19 @@
-import random, string
+import random
+import string
 
-letter_input1 = input('Choose a letter... "v" for a vowel, "c" for a consonant, "l" for either, or any other character.')
-letter_input2 = input('Choose a letter... "v" for a vowel, "c" for a consonant, "l" for either, or any other character.')
-letter_input3 = input('Choose a letter... "v" for a vowel, "c" for a consonant, "l" for either, or any other character.')
-letter_input4 = input('Choose a letter... "v" for a vowel, "c" for a consonant, "l" for either, or any other character.')
+letter_input1 = input(
+    'Choose a letter... "v" for a vowel, "c" for a consonant, "l" for either, or any other character.')
+letter_input2 = input(
+    'Choose a letter... "v" for a vowel, "c" for a consonant, "l" for either, or any other character.')
+letter_input3 = input(
+    'Choose a letter... "v" for a vowel, "c" for a consonant, "l" for either, or any other character.')
+letter_input4 = input(
+    'Choose a letter... "v" for a vowel, "c" for a consonant, "l" for either, or any other character.')
 
 vowels = 'aeiou'
 consonants = 'bcdfghjklmnpqrstvwxyz'
 letter = string.ascii_lowercase
+
 
 def generator():
     if letter_input1 == "v":
@@ -48,6 +54,7 @@ def generator():
 
     name = letter1 + letter2 + letter3 + letter4
     return (name)
+
 
 for i in range(20):
     print(generator())
