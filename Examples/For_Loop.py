@@ -1,2 +1,2 @@
 for x in range(10):
-    print x * x
+    print(x * x)
